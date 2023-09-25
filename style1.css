@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav .navbar-nav .psa .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+nav .navbar-nav .psa .nav-link:nth-child(2) {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+}
+.asp
+{
+    line-height: 20px;
+    height:20px;
+    text-align: right;
+    font-size:large;
+}
+.psa
+{
+    line-height: 20px;
+    height:40px;
+    text-align: left;
+    font-size:20px;
+}
+.ppa
+{
+    line-height: 15px;
+    height:20px;
+    text-align: start;
+    font-size:large;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: relative;
+    /*width: 100%;*/
+    height: 111vh; /* Adjust the height as needed */
+    background: url('https://cdn.wallpapersafari.com/12/70/rmcq0h.jpg') center/cover no-repeat; /* Set your background image here */
+  }
+  
+ 
+
+.navbar {
+    padding-top: 5px; /* Adjust the top padding */
+    padding-bottom: 5px; /* Adjust the bottom padding */
+    background-color: #00897b;
+    
+}
+.headbar {
+    padding-top: 0.5px; /* Adjust the top padding */
+    padding-bottom: 0.5px; /* Adjust the bottom padding */
+    background-color: black;
+    position: relative;
+    top: 0px;
+    
+}
+a.detail
+{
+    text-align: center;
+    
+}
+
+/* Change the background color and text color of the dropdown button */
+.custom-dropdown-button {
+    background-color: #edeeef; /* Change to your desired background color */
+    color: black; /* Change to your desired text color */
+  }
+
+  /* Align the dropdown content to the left */
+  .custom-dropdown-content {
+    left: 0;
+    
+  }
+/* Style for the container div */
+.date-time-container {
+    float: right;
+    top: 0px;
+    background-color: #00897b58;
+    text-align: right; /* Align contents to the right */
+    padding: 10px;
+    /*background-color: #f0f0f0; /* Background color for the container */
+    width: 240px;
+}
+
+/* Style for the date and time text */
+.date-time {
+    font-size: 15px; /* Adjust the font size as needed */
+    color: #f8f7f7; /* Text color */
+}
+
+.container-header {
+    background-color: transparent; /* Background color for the header */
+    padding: 5px; /* Padding around the header */
+    text-align:left; /* Center-align the text */
+}
+
+/* Style for the header text */
+.container-header h2 {
+    font-size: 28px; /* Font size for the header */
+    color: #333; /* Text color for the header */
+    font-style: italic; /* Font style for the header (italic) */
+}
+
+/* Style for the bottom line */
+.bottom-line {
+    border: none; /* Remove border */
+    border-top: 2px solid #333; /* Add a 2px solid top border (horizontal line) */
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
+
+.cal-container {
+    float: left; /* Align the container to the left */
+    padding: 10px; /* Add some padding to the container */
+    width: 45vw; /* Set the width to take up the remaining space */
+    height: 6vh;
+    color: black;
+    border: 2px solid rgb(4, 87, 26);
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    position: absolute;
+    left: 52.5vw;
+    text-align: left;
+    margin: 10px 0px 0px 0;
+}
+
+
+
+.tooltip-inner {
+    background-color: var(--bs-tooltip-bg);
+    color: var(--bs-tooltip-text);
+}
+
+
+
+.divider {
+    margin: 0 10px; /* Adjust the margin to control the spacing */
+    color: #000; /* Set the color of the divider (black in this example) */
+    font-weight: bold; /* Make the divider text bold */
+}
+
+
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+
+
+  
+

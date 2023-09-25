@@ -1,0 +1,6 @@
+/* Style the chart container */
+.chart-container {
+    width: 53%;
+    margin: 20px auto;
+    padding-left: 80px;
+}

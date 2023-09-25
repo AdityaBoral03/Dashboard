@@ -1,0 +1,128 @@
+.image1-container {
+    float: left; /* Align the container to the left */
+    height: 50vh;
+    border: 2px solid rgb(4, 87, 26); /* Black border around the container */
+    padding: 10px; /* Add some padding to the container */
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    margin: 10px 5px 5px 0;
+}
+/*Text below image*/
+.desp{
+    text-align: left;
+}
+
+
+.description-container {
+    float: left; /* Align the container to the left */
+    height: 50vh;
+    width: 30vw;
+    padding: 10px; /* Add some padding to the container */
+    border: 2px solid rgb(4, 87, 26);
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    margin: 10px 0px 5px 0;
+}
+.cal-container input {
+    border: none;
+    background-color: transparent;
+    outline: 0; 
+    text-align: center;
+    /*justify-content: right;*/
+    width: 210%;
+    
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    /*justify-content: right;*/
+    left: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+
+.oee-container {
+    float: left; /* Align the container to the left */
+    padding: 10px; /* Add some padding to the container */
+    width: 45vw; /* Set the width to take up the remaining space */
+    height: 43vh;
+    color: black;
+    border: 2px solid rgb(4, 87, 26);
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    position: absolute;
+    left: 52.5vw;
+    text-align: left;
+    margin: 60px 0px 0px 0;
+}
+.oee-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Center-align the legend */
+.oee-legend {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Style for availability legend item */
+.legend-item.availability {
+    color: #7b68ee;
+    font-weight: bold;
+}
+.legend-item.productivity {
+    color: #00ced1;
+    font-weight: bold;
+}
+.legend-item.quality {
+    color: #191970;
+    font-weight: bold;
+}
+.legend-mark {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between legend marks */
+}
+
+
+.progress-container {
+    float: left; /* Align the container to the left */
+    padding: 10px; /* Add some padding to the container */
+    width: 97vw; /* Set the width to take up the remaining space */
+    height: 20vh;
+    position: absolute;
+    left:0.8vw;
+    text-align: left;
+    margin-top: 53vh;
+}
+
+.alarm1-container {
+    position: absolute;
+    width: 30vw;
+    padding: 10px; /* Add some padding to the container */
+    border: 2px solid rgb(4, 87, 26);
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    margin-top: 515px;
+    text-align: left;
+}
+.feed-container {
+    float: left; /* Align the container to the left */
+    padding: 10px; /* Add some padding to the container */
+    width: 67vw; /* Set the width to take up the remaining space */
+    height: 39vh;
+    color: black;
+    border: 2px solid rgb(4, 87, 26);
+    box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
+    background-color: rgba(241, 241, 241, 0.5);
+    position: absolute;
+    left: 31.2vw;
+    text-align: left;
+    margin-top: 515px;
+
+}

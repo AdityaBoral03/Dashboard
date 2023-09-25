@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v13/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+  }
+  
+  .knob-surround {
+    position: relative;
+    background-color: grey;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: solid 0.25em #0e0e0e;
+    margin: 5em auto;
+    background: #e8dbdb;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1d1d1d), color-stop(1, #131313));
+    background: -ms-linear-gradient(bottom, #1d1d1d, #131313);
+    background: -moz-linear-gradient(center bottom, #1d1d1d 0%, #131313 100%);
+    background: -o-linear-gradient(#131313, #1d1d1d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131313', endColorstr='#1d1d1d', GradientType=0);
+    -webkit-box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset, 0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset, 0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset, 0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset, 0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset, 0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset, 0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
+  }
+  .tick-mark {
+    position: static;
+    width: 2px; /* Adjust the width of the tick marks */
+    height: 10px; /* Adjust the height of the tick marks */
+    background-color: rgb(163, 72, 72); /* Adjust the color of the tick marks */
+    transform-origin: 50% 100%; /* Rotate around the bottom center */
+  }
+  .knob {
+    position:relative;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    z-index: 10;
+  }
+  .knob:before {
+    content: "";
+    position: absolute;
+    bottom: 19%;
+    left: 19%;
+    width: 3%;
+    height: 3%;
+    background-color: #a8d8f8;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0.4em 0 #79c3f4;
+    -moz-box-shadow: 0 0 0.4em 0 #79c3f4;
+    box-shadow: 0 0 0.4em 0 #79c3f4;
+  }
+  .min,
+  .max {
+    display: block;
+    font-family: "Varela Round", sans-serif;
+    color: rgba(6, 6, 6, 0.7);
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    font-size: 70%;
+    position: absolute;
+    opacity: 0.5;
+  }
+  .min {
+    bottom: 1em;
+    left: -2.5em;
+  }
+  .max {
+    bottom: 1em;
+    right: -2.5em;
+  }
+  
+  h1 {
+    font-weight: normal;
+    margin: 2em 0;
+  }
+  p {
+    line-height: 150%;
+    max-width: 36em;
+    margin: 1em auto;
+  }
+  a {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+  }
+  a:hover,
+  a:focus {
+    color: #eee;
+  }
+  

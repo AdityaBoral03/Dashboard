@@ -1,0 +1,73 @@
+.p3table2 {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; 
+    border: 1px solid black;
+  }
+
+.p3table2 .header,
+.p3table2 .data {
+  width: 25%; 
+  padding: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #ccc; 
+}
+
+  .header-row {
+    display: table-row;
+    background-color: rgb(17, 169, 154);
+    
+  }
+
+  .header {
+    display: table-cell;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: white; 
+  }
+
+  .data-row:nth-child(odd) { 
+    display: table-row;
+    background-color: white;
+  }
+
+  /* Set different widths for columns */
+  .p3table2 .header:nth-child(1),
+  .p3table2 .data-row .data:nth-child(1) {
+    width: 80px; /* Width for "Alarm ID" column */
+  }
+
+  .p3table2 .header:nth-child(2),
+  .p3table2 .data-row .data:nth-child(2) {
+    width: 50px; /* Width for "Alarm" column */
+  }
+
+  .p3table2 .header:nth-child(3),
+  .p3table2 .data-row .data:nth-child(3) {
+    width: 80px; /* Width for "Time" column */
+  }
+
+  .p3table2 .header:nth-child(4),
+  .p3table2 .data-row .data:nth-child(4) {
+    width: 180px; /* Width for "Status" column */
+  }
+
+  .p3table2 .header:nth-child(5),
+  .p3table2 .data-row .data:nth-child(5) {
+    width: 150px; /* Width for "Priority" column */
+  }
+
+  .data-row:nth-child(even) {
+    display: table-row;
+    background-color: lightgray;
+  }
+
+  .data {
+    display: table-cell;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+  }

@@ -1,0 +1,38 @@
+.p2table1 {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; 
+    border: 1px solid black;
+    text-align: start;
+    margin-bottom: 3px;
+  }
+
+.table1 .header,
+.table1 .data {
+  width: 25%; 
+  padding: 10px;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #ccc; 
+}
+
+
+
+  .data-row:nth-child(odd) { 
+    display: table-row;
+    background-color: white;
+  }
+
+  .data-row:nth-child(even) {
+    display: table-row;
+    background-color: lightgray;
+  }
+
+  .data {
+    display: table-cell;
+    width: 33.33%;
+    padding: 6px;
+    text-align: left;
+  }
+
