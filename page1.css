@@ -23,7 +23,7 @@ body {
     position: absolute;
     top: 128px;
     left: 263px;
-    background-color: teal;
+    background-color: red;
     width: 129px;
     height: 99px;
   }
@@ -69,7 +69,7 @@ body {
     position: absolute;
     top: 549px;
     left: 263px;
-    background-color: teal;
+    background-color: yellow;
     width: 129px;
     height: 107px;
   }
