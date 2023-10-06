@@ -103,13 +103,12 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .alarm1-container {
     position: absolute;
-    width: 40vw;
-    height: 50vh;
+    width: 44vw;
     padding: 10px; /* Add some padding to the container */
     border: 2px solid rgb(4, 87, 26);
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
     background-color: rgba(241, 241, 241, 0.5);
-    margin-top: 515px;
+    margin-top: 378px;
     text-align: left;
 }
 .feed-container {
