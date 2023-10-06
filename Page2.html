@@ -1,0 +1,373 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            PRODUCTION
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/speed.css' %}">
+        <link rel="stylesheet" href="{% static 'css/p2table2.css' %}">
+        <link rel="stylesheet" href="{% static 'css/page2.css' %}">
+        <link rel="stylesheet" href="{% static 'css/p2table1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/sidebar.css' %}" />
+        <script src="{% static 'js/progressbar.js' %}"></script>
+        <script src="{% static 'js/sidebar.js' %}"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>         
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/schedular.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <ul class="navbar-nav">
+                    <a class="nav-link text-light fw-bold text-left" style="font-size: 20px;" href="#">SIEMENS
+                        <span style="font-family: Arial, sans-serif; font-size: 17px; color: yellow; border-left: solid 3px #fff; padding-left: 5px;"> Production</span>
+                    </a>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <class="asp">
+                        <a class="nav-link text-light" href="#">Signup/Login</a>
+                </ul>
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+        </nav>
+        
+        <div class="background">
+            <div class="container-fluid">               
+                <div class="image1-container">
+                    <p><strong>Machine Name:</strong> 828D </p>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.OBc2wDd26cJ3GQPK_pqXQQHaG0&pid=Api&P=0&h=180" alt="Machine Image" width="300" height="200"></br>
+                    <div class="desp">
+                        <strong>Machine Type:</strong> 828D </br>
+                        <strong>Tenant ID:</strong> 828D </br>
+                        <strong>Location:</strong> 828D </br>
+                        
+                    </div>
+                </div>
+                <div class="description-container">
+                    <div class="container-header d-flex justify-content-between ms-0 me-0 bg-transparent">
+                        <div style="font-size: 18px;"><p><b>Actual Information </b></p>
+                        </div>
+                    
+                        <div class="dropdown d-flex justify-content-end">
+                            <button
+                              class=" btn rounded btn-md btn-outline-success dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-mdb-toggle="dropdown"
+                              aria-expanded="false"
+                            >Shift
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Shift 1</a></li>
+                              <li><a class="dropdown-item" href="#">Shift 2</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="p2table1">
+                        <div class="data-row">
+                        <div class="data">Mode</div>
+                        <div class="data">Auto</div>
+                        </div>
+                        <div class="data-row">
+                        <div class="data">Workpiece</div>
+                        <div class="data">3Cylinder</div>
+                        </div>
+                        <div class="data-row">
+                        <div class="data">Part Program</div>
+                        <div class="data">3Cylinder.mpf</div>
+                        </div>
+                        <div class="data-row">
+                        <div class="data">Status</div>
+                        <div class="data">Running</div>
+                        </div>
+                    </div>
+                    <div class="p2table1">
+                        <div class="data-row">
+                        <div class="data">Target</div>
+                        <div class="data">100</div> 
+                        </div>
+                        <div class="data-row">
+                        <div class="data">Actual</div>
+                        <div class="data">90</div>
+                        </div>
+                        <div class="data-row">
+                        <div class="data">OK Piece</div>
+                        <div class="data">85</div> 
+                        </div>
+                        <div class="data-row">
+                        <div class="data">NO OK Piece</div>
+                        <div class="data">5</div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alarm1-container">
+                    <div class="p2table2">
+                        <div class="header-row">
+                          <div class="header">Alarm ID</div>
+                          <div class="header">Alarm</div>
+                          <div class="header">Time</div>
+                          <div class="header">Priority</div>
+
+                        </div>
+                        <div class="data-row">
+                          <div class="data">Alarm1</div>
+                          <div class="data">000</div>
+                          <div class="data">000</div>
+                          <div class="data">000</div>
+                          
+                        </div>
+                        <div class="data-row">
+                            <div class="data">Alarm2</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            
+                          </div>
+                          <div class="data-row">
+                            <div class="data">Alarm3</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            
+                          </div>
+                          <div class="data-row">
+                            <div class="data">Alarm4</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            
+                          </div>
+                          <div class="data-row">
+                            <div class="data">Alarm5</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            
+                          </div>
+                          <div class="data-row">
+                            <div class="data">Alarm6</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            <div class="data">000</div>
+                            
+                          </div>
+                    </div>
+                </div>
+                <div class="oee-container">
+                    <div class="container-header">
+                        <p><b>Status</b></p>
+                        <hr class="bottom-line">
+                    </div>
+                    
+                    <figure class="highcharts-figure">
+                        <div id="container"></div>
+                        <div class="oee-legend">
+                            <span class="legend-item availability">Availability: <span id="availability"></span>50%</span>
+                            <span class="divider">|</span>
+                            <span class="legend-item productivity">Productivity: <span id="productivity"></span>30%</span>
+                            <span class="divider">|</span>
+                            <span class="legend-item quality">Quality: <span id="quality"></span>15%</span>
+                        </div>
+                    </figure> 
+                    <script src="{% static 'js/speed.js' %}"></script>  
+                                 
+                </div>
+                      
+                <div class="cal-container" style="width: 690px;">
+                    <div class="input-container" style=" width: 550px; padding-left: 62%;" >
+                            <input id="effective-date" type="datetime-local" name="effective-date" minlength="1" maxlength="64" placeholder=" " autocomplete="nope" required="required"></input>
+                        </div> 
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width:5%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Description for RUNNING"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width:2%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Description for IDLE"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width:3%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Description for BREAKDOWN"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width:10%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Another description for RUNNING"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width:5%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Another description for BREAKDOWN"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width:33.33%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Another description for RUNNING"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width:2%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Another description for BREAKDOWN"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width:12%"
+                                     data-toggle="tooltip" data-placement="bottom" title="Another description for IDLE"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    8AM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    9AM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    10AM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    11AM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    12PM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    1PM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    2PM
+                                </div>
+                                <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:12.5%">
+                                    3PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="btn-group mt-3">
+                            <div class="btn rounded bg-success text-light" role="button" style="width: 45%; margin-right: 5px;">RUNNING</div>
+                       <div class="btn rounded bg-danger text-light" role="button" style="width:45%; margin-right: 5px;">BREAKDOWN</div>
+                       <div class="btn rounded bg-warning text-light" role="button" style="width:45%; margin-right: 5px;">IDLE</div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="feed-container">  
+                    <div class="task__container">
+                        <div class="task__name" id="break" style="background-color: #47e392d5;">Production</div>
+                        <div class="task__name" id="study" style="background-color: #f2fa5fe9">Lunch</div>
+                        <div class="task__name" id="tv" style="background-color: #98e2f7f4">Break</div>
+                        <div class="task__name" id="deselect">Deselect All</div>
+            
+                    </div>
+                    <div class="schedule__container">
+                        <div class="days__container">
+                            <span class="corner"></span>
+                            <div class="day">Sunday</div>
+                            <div class="day">Monday</div>
+                            <div class="day">Tuesday</div>
+                            <div class="day">Wednesday</div>
+                            <div class="day">Thursday</div>
+                            <div class="day">Friday</div>
+                            <div class="day">Saturday</div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">8am - 9am</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">9am - 10am</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">10am - 11am</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">11am - 12pm</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">12pm - 1pm</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                        <div class="part__day">
+                            <span class="time">1pm - 2pm</span>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                            <div class="task"></div>
+                        </div>
+                    </div>
+            
+                    <button class="deleteBtn">Reset Schedule</button>
+            
+                    <div class="pop-up__container">
+                        <div class="pop-up">
+                            <h4>Are you sure you want to delete all the tasks from your schedule?</h4>
+                            <div class="btn__container">
+                                <div class="btn__answer" id="btn__yes">YES</div>
+                                <div class="btn__answer" id="btn__no">NO</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+                </div> 
+                <script src="{% static 'js/schedular.js' %}"></script>            
+             
+            </div>
+        </div>  
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="nav-link text-light text-center" href="#">
+                <div class="detail">
+                    <p style="text-align: center"><a style="text-decoration: none; color: white" href="{% url 'home' %}">HOME</br></a></p></br></br>
+                    <p style="text-align: center"><a style="text-decoration: none; color: white" href="{% url 'production' %}">PRODUCTION</br></a></p></br></br>
+                    <p style="text-align: center"><a style="text-decoration: none; color: white" href="{% url 'maintenance' %}">MAINTENANCE</br></a></p></br></br>
+                    <p style="text-align: center"><a style="text-decoration: none; color: white" href="https://www.siemens.com/in/en/general/contact.html">CONTACT US</br></a></p></br></br>
+                </div>
+            </a>            
+        </div>
+        
+    </body>
+</html>
+
+
+                 
