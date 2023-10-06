@@ -1,6 +1,6 @@
 .image1-container {
     float: left; /* Align the container to the left */
-    height: 55vh;
+    height: 53vh;
     border: 2px solid rgb(4, 87, 26); /* Black border around the container */
     padding: 10px; /* Add some padding to the container */
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
@@ -15,7 +15,7 @@
 
 .description-container {
     float: left; /* Align the container to the left */
-    height: 55vh;
+    height: 53vh;
     width: 30vw;
     padding: 10px; /* Add some padding to the container */
     border: 2px solid rgb(4, 87, 26);
@@ -125,4 +125,5 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     left: 31.2vw;
     text-align: left;
     margin-top: 515px;
+    margin-bottom: 3px;
 }
