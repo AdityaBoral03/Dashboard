@@ -52,7 +52,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     float: left; /* Align the container to the left */
     padding: 10px; /* Add some padding to the container */
     width: 45vw; /* Set the width to take up the remaining space */
-    height: 43vh;
+    height: 45vh;
     color: black;
     border: 2px solid rgb(4, 87, 26);
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
@@ -60,7 +60,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     position: absolute;
     left: 52.5vw;
     text-align: left;
-    margin: 60px 0px 0px 0;
+    margin: 60px 0px 0px 0px;
 }
 .oee-container h3 {
     font-size: 18px;
@@ -113,9 +113,9 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     text-align: left;
 }
 .feed-container {
-    float: left; /* Align the container to the left */
+    float: right; /* Align the container to the right */
     padding: 10px; /* Add some padding to the container */
-    width: 70%; /* Set the width to take up the remaining space */
+    width: auto; /* Set the width to take up the remaining space */
     height: 90vh;
     color: black;
     border: 2px solid rgb(4, 87, 26);
