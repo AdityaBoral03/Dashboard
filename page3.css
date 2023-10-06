@@ -74,7 +74,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .chart-container {
     padding: 0px; /* Add some padding to the container */
     width: 100vw; /* Set the width to take up the remaining space */
-    height:46.5vh;
+    height:47vh;
     color: black;
     border: 2px solid rgb(4, 87, 26);
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
