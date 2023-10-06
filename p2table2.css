@@ -18,7 +18,7 @@
   .header-row {
     display: table-row;
     background-color: rgb(17, 169, 154);
-    
+    text-align: center;
   }
 
   .header {
