@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+/* TASKS CONTAINER */
+.task__container{
+    display: flex;
+    margin-bottom: 1rem;
+    /* background-color: brown; */
+    padding: 10px;
+}
+
+.task__container .task__name{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task__name.selected{
+    box-shadow:0px 0px 0px 2px black inset;
+}
+
+#deselect{
+    background-color: #1d3557;
+    color: white;
+}
+
+.days__container{
+    display: flex;
+    width: 54vw;
+    padding-left: 100px;
+    
+}
+
+.corner{
+    width: 0px;
+    height: 70px;
+    margin: 2px;
+}
+
+.day{
+    width: 100px;
+    border: solid 1px white;
+    background-color: teal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.part__day{
+    display: flex;
+}
+
+.time{
+    width: 100px;
+    height: 70px;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.task{
+    background-color: rgb(190, 228, 228);
+    height: 70px;
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* Reset Button */
+.deleteBtn{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.deleteBtn:hover{
+    background-color: #eee;
+}
+
+/* Pop up */
+.pop-up__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up{
+    width: 300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8ac0cb;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn__answer{
+    margin: 0 20px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
