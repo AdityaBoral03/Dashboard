@@ -103,8 +103,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .alarm1-container {
     position: absolute;
-    width: 40vw;
-    height: 195vh;
+    width: 100vw;
+    height: 550vh;
     padding: 10px; /* Add some padding to the container */
     border: 2px solid rgb(4, 87, 26);
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
@@ -115,8 +115,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .feed-container {
     float: left; /* Align the container to the left */
     padding: 10px; /* Add some padding to the container */
-    width: 57vw; /* Set the width to take up the remaining space */
-    height: 85vh;
+    width: 27vw; /* Set the width to take up the remaining space */
+    height: 65vh;
     color: black;
     border: 2px solid rgb(4, 87, 26);
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
