@@ -52,11 +52,6 @@
 
   .table2 .header:nth-child(4),
   .table2 .data-row .data:nth-child(4) {
-    width: 180px; /* Width for "Status" column */
-  }
-
-  .table2 .header:nth-child(5),
-  .table2 .data-row .data:nth-child(5) {
     width: 150px; /* Width for "Priority" column */
   }
 
