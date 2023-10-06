@@ -5,7 +5,7 @@
     padding: 10px; /* Add some padding to the container */
     box-shadow: 5px 5px 5px rgba(18, 137, 2, 0.9);
     background-color: rgba(241, 241, 241, 0.5);
-    margin: 10px 0px 0px 0px;
+    margin: 10px 5px 5px 0px;
 }
 /*Text below image*/
 .desp{
@@ -125,5 +125,4 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     left: 31.2vw;
     text-align: left;
     margin-top: 515px;
-    bottom: 2px;
 }
